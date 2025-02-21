@@ -12,7 +12,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Git 저장소에서 소스 코드 체크아웃 (branch 지정 : 본인 repository의 branch 이름으로 설정)
-                git branch: 'main', url: 'https://github.com/chayeonhee/eureka.git'
+                git branch: 'main', url: 'https://github.com/chayeonhee/accounts.git'
                 // git url: 'https://github.com/chayeonhee/eureka.git',  branch: 'main', submoduleCfg: [], extensions: [[$class: 'SubmoduleOption', recursiveSubmodules: true]]
             }
         }
